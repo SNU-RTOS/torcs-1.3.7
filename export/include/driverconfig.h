@@ -1,1 +1,1 @@
-/home/roboy/torcs/torcs-1.3.7/src/libs/confscreens/driverconfig.h
+/home/hwancheol/torcs-1.3.7/src/libs/confscreens/driverconfig.h

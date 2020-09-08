@@ -386,6 +386,10 @@ drive(int index, tCarElt* car, tSituation *s)
 
     // computing distance to middle
     float dist_to_middle = 2*car->_trkPos.toMiddle/(car->_trkPos.seg->width);
+    // computing distance to left
+    float dist_to_left = 2*car->_trkPos.toMiddle/(car->_trkPos.seg->width);
+    // computing distance to right
+    float dist_to_right = 2*car->_trkPos.toMiddle/(car->_trkPos.seg->width);
     // computing the car angle wrt the track axis
     float angle =  RtTrackSideTgAngleL(&(car->_trkPos)) - car->_yaw;
     NORM_PI_PI(angle); // normalize the angle between -PI and + PI
@@ -505,7 +509,9 @@ drive(int index, tCarElt* car, tSituation *s)
     stateString += SimpleParser::stringify("yaw", car->_yaw);
     stateString += SimpleParser::stringify("speedGlobalX", car->_speed_X);
     stateString += SimpleParser::stringify("speedGlobalY", car->_speed_Y);
-
+    stateString += SimpleParser::stringify("distToMiddle", car->_trkPos.toMiddle);
+    stateString += SimpleParser::stringify("distToLeft", car->_trkPos.toLeft);
+    stateString += SimpleParser::stringify("distToRight", car->_trkPos.toRight);
 
 
     char line[UDP_MSGLEN];
