@@ -1,1 +1,1 @@
-/home/hwancheol/torcs-1.3.7/src/linux/osspec.h
+/home/rtos/torcs-1.3.7/src/linux/osspec.h

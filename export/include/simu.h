@@ -1,1 +1,1 @@
-/home/hwancheol/torcs-1.3.7/src/interfaces/simu.h
+/home/rtos/torcs-1.3.7/src/interfaces/simu.h
